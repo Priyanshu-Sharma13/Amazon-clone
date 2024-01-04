@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.css" integrity="sha512-ZH3KB6wI5ADHaLaez5ynrzxR6lAswuNfhlXdcdhxsvOUghvf02zU1dAsOC6JrBTWbkE1WNDNs5Dcfz493fDMhA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="page1">
+        <div id="nav">
+            <div id="nav1">
+                <div id="amazon-logo">
+                    <img src="https://www.shutterstock.com/image-vector/amazon-logo-icon-isolated-on-600nw-2300329721.jpg">
+
+                </div>
+                <div id="location">
+                    <div id="line1">
+                        <p>Deliver to</p>
+                    </div>
+                    <div id="line2">
+                        <i class="ri-map-pin-line"></i>
+                        <h2>
+                            India
+                        </h2>
+                    </div>
+                </div>
+                <div id="space">
+
+                </div>
+                <div id="search">
+                    <select>
+                        <option>
+                            All
+                        </option>
+
+                        <input placeholder="Search Amazon">
+                        <div id="search-i">
+                            <i class="ri-search-line"></i>
+                        </div>
+                        
+                    </select>
+                </div>
+                <div id="country">
+                    <div id="country-img">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAABgFBMVEVfvkD////vhz7xhj7riT7vh0DwiT7xhkBcv0DzhT7vhkPwiTz8//v5//1gwT3+/vxhuUljvjxXvk07oDzrsJnjdD3rr55kuz3//PxcvkQpF23///lkukIAAET8+////fk8nkDjdToAAEEAAE/8/vMAAEn69/9cvE2qpr8AAFYpF2gAAFEAADnx7vi8tdXZ1elBOHSGgpvU0t1ZU3rLx+Di4Ou/utJqY42wrMKalrCoosV0b4+CeaXy8PN+eY/y7vwuImDvijHhdEXprKOQiKhXS4hOR3mMh7Pt6v7JxdQiFk3l3f/Wzu+AepgmFmEZCkvBvsOPi5qrodNdVIF0cIISAGealLo4MGRDOnUAAC0mHF5rZopOSG1FPm6WkqlgXHYzLVGdm6luZKY4LHH+/+p6cKakmNobEUjAueNRRoN6asM3JXhDM4BVRJCwpNPCvNZ7eIFtXqO8rPM7KIRfTKs6NVOPgranpauGdsFMRm5uYpVfUZNeWXm1qOAtI1NzbJoBxdy6AAAOZUlEQVR4nO2cjV/ayNbHMypWBTv13n3JOmVyr4SUSEMQEt4xbC9F6BasGwUXUWuz3VuvWu99+mxva3nqv/6cCW7VxrrPPnsb9oPz/bQ0MAk5+eXMmZPhTIVAIBgMfhsMBmZu3WgCjJnJiZmZaeHW+HgwOB0cvwUbN5kxxq2BJtPsg+npaa6Jqwn0l3EhGITN6Vvw2bCtGi6TjOmgqwkLJYGZQGBiYthWDRdXEwgjYzNjwrffgqNMT05Msg7EmR6/Nc36DoSVMdBk8kbjjjsQTyYD40JgZmagydjEjcbVJMC2JoVAAOIt95OBnwQmgxOBaWFsbBLyE6bJzWaQuY1DJJkWwE1gDGKajN1oXDcZCwYnYCzmmgzgmnjhmnjhmnjhmnjhmnjhmnjhmnjhmnjhmnjhmnjhmnjhmnjhmnjhmnjhmnjhmnjhmnjhmnjhmnjhmnjhmnjhmnjhmnjhmnjhmnjhmnjhmnjhmnjhmnjhmnjhmnjhmnjhmnjhmnjhmnjhmnjhmnjhmnjhmnjhmnjhmni5pElgbJLV24/dGp45QzvzBVxNAoN1XjNMHKaJ7+syXFMmwZiZTxrqozWuJLfgX9BkMhhk60YnguPBIXFm1LBOf9EK0GAyMC0E2Q1ja9/8vCnnBN3zs94T/PWdPyeuX7qajAtjbKHXdGDCXe/lK4OoFgicvz377MOG7ya5fWdG+OuXXz548OV/lL8yfnWv85M+cPc+P+r/dvzn4sED4Ysvvvjqqy+8fHWZa1t/06FX7OS+/9vf2NbZ208c9Gtf/nuMPt8SCCGhEA55QJe53Iivbb228cKXMNytWYRnB0dh9+Prjvr/n/kjo6+4ZtekEBZEEV3JR4f8prN9uNirDr2CWeDCdxPJq/onzhz6DY3X63cBgVIwX2KIl8CXEa9r/ajR/bZPtp5BqSQRibB2jBSt/jiRrzab1WrBqGsiIoPvuOK4a+36HUYjBC/uabEAt+jspv76/fyPwbrIwBMROISSWHmohsMLCxE1Gg5H47WVRB0hQga+8kmP+Rx2DfrObAjO/aEXf/5Tukju9UqEIEQbxUcR1Sm1E4/ridJ34C7Nt5F469QoExmczVdJzqwUQrJMsN+aYAnORmQZUWMrulorJNLMd9GTNdeIfPv7h5GIbVAQjdwYTVw/IRLSi5F4yVCQsk5F8IgnyxBCMF1OIUUvbWyc6AiTz2+Vx0qIJxBIZv3XBCNC25VVJ4ElUGPtCQoxTShoY/bLIBfVk2qroCH6+c36iJDg59nwL8qzLoG1YrSTMYqYQL/JLUFXwk+KMDagxhLGlEiptcRmOGsi4s/9usBwNKGUoNTbH4p1RJsNFlystBaS0ZMt2AWt5yG0yFrfRPVieDMFAvrcgXzXZJAbUKw73TZ4AzLTZXAL2kkhGeW2KCFKz2CjzU4VPEcpRDcNdDM0IUjfjpaQLEO0aMZYUzaGCIplFSI1eho4k9k3RRiLUSaa1P0ej33XJERC0Bn0ZDhRyCEZPMDc1kGOQg+FUMxWZLKzRWWq7BagERO6s7Lo+C2Kr5owMIFrVex4G5WbGUlmvSQLL8ZTk6B2WpHL2zF4mwFnIZhqa/8WC6qtYVmCZxC/TByCJjDOtH9oKhBY+xmWgOjvGwjr2zmEqn2F6KvgNubTHMQYRJf3EKavozAoSdQ/Z/FdE5auZVbTGmQoxLRzSMI0v63JNFuiqJlWUP6RRaRSWoTAqu3uUSzLin0/42vvGYImyLKjBowyzEV6OUjStHgB4WZFQ1tphWa3KGo8Yg5k9neo29X0Sk0TfcxRfNcE7n8hsrlkIgqJGdE7eQiw7a6JEtEUqtk0VVlB5bdZ5Uf0XWeJDvIZ85m64+eA7LsmiJSdbbNRXNIIgbHW6BQU2UxmkRmpou2HSm4jg/OqQaAhr0CYJXK5WjSSDkTgwVDug4X+a4L2fihgpO3sJhQiI0hA8hTlFwxaydJkTUk7ll45pei4U4LEjhCt0M+VwbPy8GZkNZG09FOTXZuR7hkU/4gKqyui1qlpz7u6U/uuZSv2qomOwyUKyYsV2y6akNpZNQcEHFlN8LHahFGWPfnGOkUdI1oNV2kski+oCcf+Kd5OhKso8feSJktarpeGzB76D1qJvCCj6yeotPEYXiUJrlS3WyuWRJvhNaWS/H7+xNn/R/z7/Y6eadkaiGd382VJlEFApG+UBpKMmiYsIiDqLMbKmhswwVUSrW7BQsXo88LqO+cAODyK/PRy4WEdH58sQLeBJ2RXB+vhpumbnb5qwn6h0FultX/u7jR0BYZXGeun8dqL+mn8X6+6B4sH84sHrcNn3Z6pP28lE5DSg4pUSzX21muthm92+qoJc/zMQgHRVK7/dGtJt9gkWu5RuPhfR4uv5l0WFw8Xky9W5uNLzC+oVc81+731J2YiHPPNTp/jCQy7q4abqFu5Uiu+386ZqL4S3zhyFgeSwN9X/z2vZiGn03OFd6qazeuwNwb38m0W0u8YS4sdHUki+9mGaoniz2rSbj/+/nBxIMkZB68fJ0q15GqvmDAV5M7xK62HI6kJxAapbNcsTN1hh0UXM3Haim847w4uSXJ0FI+oTrsBoRiJTAosok5S8ctOXzWBIbhcSyvn4ymbAFASK0eX3WRx/vB5AcKJxOYgJYn9yiOhtx3fJlB81oSUk/uZJ7lcLhbL7+xUm83l5eVm6ejwkibzB/ulaj6fyzR0va4xFIs+7Fp+2emnJiEEfSe5mf/33t7OUrOYrW06ixsb6sbGZTdhqKoaj8TVAS1nP73lOHW/7PTXTygub6fduEBFSqmiaeWy9d3LN4eX4sn84ZuXhg7ULctiblKGveyKNop9h6lSfluzIIxQN4GDi6T6TtaJdFuX3WQjWcqxAHv2a3EI4slmRRlVTWh202Qx081pzUyzG4+3Tl5fGncWnaM37yKqehIzB1OViM1PVzbFkdSEPeE0uzrGMkaaGdvtdGrZgl5//K578OpChD3oniTqkKBUKtkY5CckJGFirZ6M5LjDHgJRIZyBrcZa/+/7K7GURpGSr9x/9uZiz/nHu/udHKWWUSi9v1/cM1lmY0RXRtVPMDoOVzP9fjGv191kTMpUovbjF6pzNH/AMvuDxcPWoxeZ3oLdQOBNVj223O/tpGgunICeN3pzBe4lmZVkouE+/LEZFPN09W2GNrqdl4eHB4vO/KvDw8WfOi3DKnQeFTQ3paGanlteTnd1xGo0/Jip9r+uYLNVhzxFlgmMPrFWsqCg1EJFX1afHR44h0cH/1Jfg9foSF8J2zr75YO5BjUrtsU0kUZTk4KaYy4iY9rY3i6UCTpubZt6xH6pvnYevlH/52TVSL2vwMOwXlzNa6zSAkbiF/fzrGxxRDXBeveEstIkc+1p3kQ/IqOTNOlpy2irx479cqNkRLbERqdWJ0TJ9HoGPC8SEZ2GdVZeOoJ9xw0o9HRDJ9Btekt1JMmo3k3rqLHQVuxa3alZ3ZrSVA2Uep+1JJlYuZ+rFiJI79oU/1Jy+9mt9Hn+hF2YES8pjd0lk6WyWO8V61jrdywtUkSOjbKOaW5CKqK/3RJh3EFavv8Eo5KagKTW/QZJ+uyi+K4JwspJpbrcQJCIEWrZRUVEiVYGGZC3OGnYzKFE1EA4tbmjwB4S1dfXHsdrlkgH9eajqAlkXka8Ax0CYyJp6SolWHFOEapGNJTsY71SRYp9okm47lShbxEsio1D9RgRikdWE4iTSilcgIQMHgjXl9hjXu69KSvZE1Ha3xWVrVMRG+/dugJ7h3UvihMq+1HwbOqRjJwmDBhy3j7SJTEkrq/B7Ufmdk4iejKGUC2roHxHk9ByXwxBQpfOsFxWd1RTkn2s8/NfE3a/jXDNxOX1PXcGf6eGJHRcMTGyT6msRyE1MX9OsOIKrdhA2NpusTeSfwUoQ/ATQGzHbWttj2KCQmaPlYHGejCubJUo0Z5mQKJcX2M1fuV/pqxTlq750GPO8V8TtxaUlsLbMYgllKKlJYRk2me1OcUq9KWlJoWQ08+xYmup3HwWLio+V1L7X1fg1gzLYil8YkLqRvSegkTJqjBnaeZhhG70yziEGrtsqhFrp5GsAsqNtiYDiKycqrYJ0WUpg4hI9bQG/agEcZaYPZPFnCVWEqqfREua70t4hqQJq/SrLlQSqLGOMCVob4eV/K3kWF0FjDasJnIXi8eVcFXxq8LinOFoMqgvz1Sip891SYbwspxiuXs7w17zeUhjfiS5ldJCModk6aZogkQ2J5vKRrptNrVYZ6MOaNIAPyGpJus7ZltVbZ1iKt4QTdy6CxheaGZzoVI1sN4800SiRNa2yoperdw/yogfli34apvgLir1e93oOVourar7z1Z0C5L8PbbaQNOLz/dX43aMIt/NcvWfZX7yqWXXfiBhrVHsRqMde6v0+tmbldKp7ajxbtbQkJ+p6xkDnxRm2U9KLngYuKudrUa+VOtGonF1Idzaf942IGXBIrtXQzFLmGVrRmevWLvvD+zmhODRhpY1zdR1s1zWWKlwiGW4s267/zYJIIkkzYZmh0QIywNpzv7DgpAsY1YQCx8xSXy2xnUTJPz5z39x/wyJv1yGfTA0W1xr4EX45t69O3fuMf40DL7x8qd7H/DRkPOT3hNu3xbmbk/d/oMgAFMuwzTi9u2pudsCM+HrYXD3Cm7PAUwcPw1x1ZgTXE2mwFuFs79DYOoyzKSpD1r5aQjzUOHuXfYicD5mbtgGcDgcDofD4XA4HA6Hw+FwOBwOh8PhcDgcDofD4XA4HA6Hw+FwOBwOh8PhcDgjzZTwjXD762Fb8QdiaupME2DYtvxRmJr7oMmwTfnD8Ismvyxgvem4mggCWzF5/sHNZerszxRbQvv13Jy7oPcq3JW3n2qc+7A299rGq1qvbfwd3/t7jXaXNc8Jd+7cvXv3DucC/ws60DePlmVstQAAAABJRU5ErkJggg==">
+
+                    </div>
+                        
+                        <h2>
+                            IN
+                        </h2>
+                </div>
+                <div id="signin">
+                    <p>
+                        Hello, sign in
+                    </p>
+                    <select>
+                        <option>
+                            Accout & Lists
+                        </option>
+                    </select>
+                </div>
+                <div id="return">
+                    <h3>
+                        Returns
+                    </h3>
+                    <h2>
+                        & Orders
+                    </h2>
+                </div>
+                <div id="addtocart">
+                    <i class="ri-shopping-cart-2-line"></i>
+                    <p>
+                        cart
+                    </p>
+                </div>
+            </div>
+            <div id="nav2">
+                
+                <a href=""><i class="ri-menu-line"></i>All</a>
+                <a href="">Today's Deals</a>
+                <a href="">Registry</a>
+                <a href="">Customer Services</a>
+                <a href="">Gift Cards</a>
+                <a href="">Sell</a>
+
+            </div>
+        </div>
+        <div id="background">
+            <div id="backspace1">
+
+            </div>
+            <div id="notice">
+                <p>
+                    You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery.
+                    <a href="">
+                        Click here to go to amazon.in
+                    </a>
+                </p>
+                
+            </div>
+            <div id="linespace1"></div>
+            <div id="grid1">
+                <div id="block" class="type1">
+                    <h1>
+                        Gaming accessories
+                    </h1>
+                    <div id="block-img">
+                        <!-- <img src="https://images-na.ssl-images-amazon.com/images/W/MEDIAX_792452-T2/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Headset_2x._SY232_CB667159060_.jpg">
+                        <img src="https://images-na.ssl-images-amazon.com/images/W/MEDIAX_792452-T2/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Keyboard_2x._SY232_CB667159063_.jpg">
+                        <img src="https://images-na.ssl-images-amazon.com/images/W/MEDIAX_792452-T2/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Mouse_2x._SY232_CB667159063_.jpg">
+                        <img src="https://images-na.ssl-images-amazon.com/images/W/MEDIAX_792452-T2/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Chair_2x._SY232_CB667159060_.jpg"> -->
+                        <div id="line1">
+                            <div id="img">
+                            
+                                <img src="https://images-na.ssl-images-amazon.com/images/W/MEDIAX_792452-T2/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Headset_2x._SY232_CB667159060_.jpg">
+                                <p>Headsets</p>
+                            </div>
+                            <div id="img">
+                                <img src="https://images-na.ssl-images-amazon.com/images/W/MEDIAX_792452-T2/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Keyboard_2x._SY232_CB667159063_.jpg">
+                                <p>
+                                    Keyboards
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div id="line2">
+                            <div id="img">
+                                <img src="https://images-na.ssl-images-amazon.com/images/W/MEDIAX_792452-T2/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Mouse_2x._SY232_CB667159063_.jpg">
+                                <p>
+                                    Computer mice
+                                </p>
+                            </div>
+                            <div id="img">
+                                <img src="https://images-na.ssl-images-amazon.com/images/W/MEDIAX_792452-T2/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Chair_2x._SY232_CB667159060_.jpg">
+                                <p>
+                                    Chair
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="">See More</a>
+
+                </div>
+                <div id="block" class="type2">
+                    <h1>
+                        Toys under $25
+                    </h1>
+                    <div id="block-img">
+                        <img src="https://images-na.ssl-images-amazon.com/images/W/MEDIAX_792452-T2/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_2x_v3._SY608_CB573698005_.jpg">
+                    </div>
+                    <a href="">See More</a>
+                </div>
+                <div id="block" class="type2">
+                    <h1>
+                        Deals in PCs 
+                    </h1>
+                    <div id="block-img">
+                        <img src="https://images-na.ssl-images-amazon.com/images/W/MEDIAX_792452-T2/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_2x_v1._SY608_CB573698005_.jpg">
+                    </div>
+                    <a href="">See More</a>
+                </div>
+                <div id="block" class="type1">
+                    <h1>
+                        Refresh your space
+                    </h1>
+                    <div id="block-img">
+                        <div id="line1">
+                            <div id="img">
+                            
+                                <img src="https://images-na.ssl-images-amazon.com/images/W/MEDIAX_792452-T2/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_372x232_LP-HP_B08MYX5Q2W_01.23._SY232_CB619238939_.jpg">
+                                <p>Dining</p>
+                            </div>
+                            <div id="img">
+                                <img src="https://images-na.ssl-images-amazon.com/images/W/MEDIAX_792452-T2/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_372x232_home_B08RCCP3HV_01.23._SY232_CB619238939_.jpg">
+                                <p>
+                                    Home
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div id="line2">
+                            <div id="img">
+                                <img src="https://images-na.ssl-images-amazon.com/images/W/MEDIAX_792452-T2/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_372x232_kitchen_B0126LMDFK_01.23._SY232_CB619238939_.jpg">
+                                <p>
+                                    Kitchen
+                                </p>
+                            </div>
+                            <div id="img">
+                                <img src="https://images-na.ssl-images-amazon.com/images/W/MEDIAX_792452-T2/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_372x232_health-beauty_B07662GN57_01.23._SY232_CB619238939_.jpg">
+                                <p>
+                                    Health and beauty
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <a href="">See More</a>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <div id="page2">
+        <div id="linespace1"></div>
+        <div id="grid1">
+            <div id="block" class="type2">
+                <h1>
+                    Top Deal
+                </h1>
+                <div id="block-img">
+                    <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/41Zw9i19k5L._AC_SY460_.jpg">
+                </div>
+                <a href="">See all deals</a>
+            </div>
+            <div id="block" class="type1">
+                <h1>
+                    Shop deals in Fashion
+                </h1>
+                <div id="block-img">
+                    <div id="line1">
+                        <div id="img">
+                            <img src="https://images-na.ssl-images-amazon.com/images/W/MEDIAX_792452-T2/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_BOTTOMS_2x._SY232_CB624172947_.jpg">
+                            <p>Jeans under $50</p>
+                        </div>
+                        <div id="img">
+                            <img src="https://images-na.ssl-images-amazon.com/images/W/MEDIAX_792452-T2/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_TOPS_2x._SY232_CB623353881_.jpg">
+                            <p>
+                                Tops under $25
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div id="line2">
+                        <div id="img">
+                            <img src="https://images-na.ssl-images-amazon.com/images/W/MEDIAX_792452-T2/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_DRESSES_2x._SY232_CB623353881_.jpg">
+                            <p>
+                                Dresses under $30
+                            </p>
+                        </div>
+                        <div id="img">
+                            <img src="https://images-na.ssl-images-amazon.com/images/W/MEDIAX_792452-T2/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_SHOES_2x._SY232_CB624172947_.jpg">
+                            <p>
+                                Shoes under $50
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <a href="">See all deals</a>
+
+            </div>
+            
+            
+            <div id="block" class="type1">
+                <h1>
+                    Fashion trends you like
+                </h1>
+                <div id="block-img">
+                    <div id="line1">
+                        <div id="img">
+                            <img src="https://images-na.ssl-images-amazon.com/images/W/MEDIAX_792452-T2/images/G/01/AMAZON_FASHION/2023/LuxuryStores/Spring-23/GW/Quad_Cards/Spring/LSS23_SPRING_DT_CAT_CARD_2_x2._SY232_CB595261253_.jpg">
+                            <p>Dresses</p>
+                        </div>
+                        <div id="img">
+                            <img src="https://images-na.ssl-images-amazon.com/images/W/MEDIAX_792452-T2/images/G/01/AMAZON_FASHION/2023/LuxuryStores/Spring-23/GW/Quad_Cards/Spring/LSS23_SPRING_DT_CAT_CARD_3_x2._SY232_CB595261253_.jpg">
+                            <p>
+                                Knits
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div id="line2">
+                        <div id="img">
+                            <img src="https://images-na.ssl-images-amazon.com/images/W/MEDIAX_792452-T2/images/G/01/AMAZON_FASHION/2023/LuxuryStores/Spring-23/GW/Quad_Cards/Spring/LSS23_SPRING_DT_CAT_CARD_1_x2._SY232_CB595261253_.jpg">
+                            <p>
+                                Jackets
+                            </p>
+                        </div>
+                        <div id="img">
+                            <img src="https://images-na.ssl-images-amazon.com/images/W/MEDIAX_792452-T2/images/G/01/AMAZON_FASHION/2023/LuxuryStores/Spring-23/GW/Quad_Cards/Spring/LSS23_SPRING_DT_CAT_CARD_4_x2._SY232_CB595261253_.jpg">
+                            <p>
+                                Jewelry
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <a href="">See More</a>
+            </div>
+            <div id="block" class="type2">
+                <h1>
+                    Beauty deals under $25 
+                </h1>
+                <div id="block-img">
+                    <img src="https://images-na.ssl-images-amazon.com/images/W/MEDIAX_792452-T2/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_2x_v5._SY608_CB573698005_.jpg">
+                </div>
+                <a href="">Shop now</a>
+            </div>
+        </div>
+        <div id="linespace1"></div>
+        <div id="grid2">
+            <div id="heading">
+                <h1>
+                    Exciting deals
+                </h1>
+                <a href="">Shop all deals</a>
+            </div>
+            <div id="scroll">
+                <div id="entity">
+                    <div id="img-sec">
+                        <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/51w3b1xFUJL._AC_SY400_.jpg">
+                    </div>
+                    <h6><span>44%off </span> Deal</h6>
+                    <h4>$168.53  <span>List Price : $302.99</span></h4>
+                    <p>
+                        Trimax TWL100 Ultra-Max Adjustable....
+                    </p>
+                </div>
+                <div id="entity">
+                    <div id="img-sec">
+                        <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/41r2g8J5v3L._AC_SY400_.jpg">
+                    </div>
+                    <h6><span>25%off </span> Deal</h6>
+                    <h4>$18.05  <span>List Price : $23.99</span></h4>
+                    <p>
+                        Melissa & Doug Design-Your-Own Jew...
+                    </p>
+                </div>
+                <div id="entity">
+                    <div id="img-sec">
+                        <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/41YgATcJVmL._AC_SY400_.jpg">
+                    </div>
+                    <h6><span>15%off </span> Deal</h6>
+                    <h4>$42.40  <span>List Price : $50.09</span></h4>
+                    <p>
+                        Magic The Gatherig The brothers War...
+                    </p>
+                    
+                </div>
+                <div id="entity">
+                    <div id="img-sec">
+                        <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/41+p2P6TKVL._AC_SY400_.jpg">
+                    </div>
+                    <h6><span>52%off </span> Deal</h6>
+                    <h4>$98.04  <span>List Price : $205.99</span></h4>
+                    <p>
+                        Little Tikas Backyard car wash...
+                    </p>
+                </div>
+                <div id="entity">
+                    <div id="img-sec">
+                        <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/31fsnCamPLL._AC_SY400_.jpg">
+                    </div>
+                    <h6><span>28%off </span> Deal</h6>
+                    <h4>$72.33  <span>List Price : $99.99</span></h4>
+                    <p>
+                        Great Northern Popcorn Big Bar..
+                    </p>
+                </div>
+                <div id="entity">
+                    <div id="img-sec">
+                        <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/41X9SwLymYL._AC_SY400_.jpg">
+                    </div>
+                    <h6><span>44%off </span> Deal</h6>
+                    <h4>$168.53  <span>List Price : $302.99</span></h4>
+                    <p>
+                        Trimax TWL100 Ultra-Max Adjustable....
+                    </p>
+                </div>
+                <div id="entity">
+                    <div id="img-sec">
+                        <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/51ak7tBjGtL._AC_SY400_.jpg">
+                    </div>
+                    <h6><span>44%off </span> Deal</h6>
+                    <h4>$168.53  <span>List Price : $302.99</span></h4>
+                    <p>
+                        Trimax TWL100 Ultra-Max Adjustable....
+                    </p>
+                </div>
+                <div id="entity">
+                    <div id="img-sec">
+                        <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/51Du8I+Z2fS._AC_SY400_.jpg">
+                    </div>
+                    <h6><span>44%off </span> Deal</h6>
+                    <h4>$168.53  <span>List Price : $302.99</span></h4>
+                    <p>
+                        Trimax TWL100 Ultra-Max Adjustable....
+                    </p>
+                </div>
+                <div id="entity">
+                    <div id="img-sec">
+                        <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/418CFYbALAL._AC_SY400_.jpg">
+                    </div>
+                    <h6><span>44%off </span> Deal</h6>
+                    <h4>$168.53  <span>List Price : $302.99</span></h4>
+                    <p>
+                        Trimax TWL100 Ultra-Max Adjustable....
+                    </p>
+                </div>
+            </div>
+           
+        </div>
+
+        <div id="linespace1"></div>
+        <div id="grid3">
+            <div id="heading">
+                <h1>
+                    Home Decor under $20
+                </h1>
+                <a href="">Shop now</a>
+            </div>
+            <div id="scroll">
+                <div id="entity">
+                    <div id="img-sec">
+                        <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/612NJSPRrLL._AC_SY400_.jpg">
+                    </div>
+                </div>
+                <div id="entity">
+                    <div id="img-sec">
+                        <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/61XYX1tzoTL._AC_SY400_.jpg">
+                    </div>
+                </div>
+                <div id="entity">
+                    <div id="img-sec">
+                        <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/61wUpyw9cIL._AC_SY400_.jpg">
+                    </div>
+                </div>
+                <div id="entity">
+                    <div id="img-sec">
+                        <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/81AOpcqJfHL._AC_SY400_.jpg">
+                    </div>
+                </div>
+                <div id="entity">
+                    <div id="img-sec">
+                        <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71lYwpEFaqL._AC_SY400_.jpg">
+                    </div>
+                </div>
+                <div id="entity">
+                    <div id="img-sec">
+                        <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71dcYplfvsS._AC_SY400_.jpg">
+                    </div>
+                </div>
+                <div id="entity">
+                    <div id="img-sec">
+                        <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71vuZisPpYL._AC_SY400_.jpg">
+                    </div>
+                </div>
+                <div id="entity">
+                    <div id="img-sec">
+                        <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/61dhzAmqvOL._AC_SY400_.jpg">
+                    </div>
+                </div>
+                <div id="entity">
+                    <div id="img-sec">
+                        <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/61XwmZLvaNL._AC_SY400_.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="linespace1"></div>   
+        
+
+
+        <div id="grid1">
+            <div id="block" class="type2">
+                <h1>
+                    Top Deal
+                </h1>
+                <div id="block-img">
+                    <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/41Zw9i19k5L._AC_SY460_.jpg">
+                </div>
+                <a href="">See all deals</a>
+            </div>
+            <div id="block" class="type1">
+                <h1>
+                    Shop deals in Fashion
+                </h1>
+                <div id="block-img">
+                    <div id="line1">
+                        <div id="img">
+                            <img src="https://images-na.ssl-images-amazon.com/images/W/MEDIAX_792452-T2/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_BOTTOMS_2x._SY232_CB624172947_.jpg">
+                            <p>Jeans under $50</p>
+                        </div>
+                        <div id="img">
+                            <img src="https://images-na.ssl-images-amazon.com/images/W/MEDIAX_792452-T2/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_TOPS_2x._SY232_CB623353881_.jpg">
+                            <p>
+                                Tops under $25
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div id="line2">
+                        <div id="img">
+                            <img src="https://images-na.ssl-images-amazon.com/images/W/MEDIAX_792452-T2/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_DRESSES_2x._SY232_CB623353881_.jpg">
+                            <p>
+                                Dresses under $30
+                            </p>
+                        </div>
+                        <div id="img">
+                            <img src="https://images-na.ssl-images-amazon.com/images/W/MEDIAX_792452-T2/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_SHOES_2x._SY232_CB624172947_.jpg">
+                            <p>
+                                Shoes under $50
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <a href="">See all deals</a>
+
+            </div>
+            
+            
+            <div id="block" class="type1">
+                <h1>
+                    Fashion trends you like
+                </h1>
+                <div id="block-img">
+                    <div id="line1">
+                        <div id="img">
+                            <img src="https://images-na.ssl-images-amazon.com/images/W/MEDIAX_792452-T2/images/G/01/AMAZON_FASHION/2023/LuxuryStores/Spring-23/GW/Quad_Cards/Spring/LSS23_SPRING_DT_CAT_CARD_2_x2._SY232_CB595261253_.jpg">
+                            <p>Dresses</p>
+                        </div>
+                        <div id="img">
+                            <img src="https://images-na.ssl-images-amazon.com/images/W/MEDIAX_792452-T2/images/G/01/AMAZON_FASHION/2023/LuxuryStores/Spring-23/GW/Quad_Cards/Spring/LSS23_SPRING_DT_CAT_CARD_3_x2._SY232_CB595261253_.jpg">
+                            <p>
+                                Knits
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div id="line2">
+                        <div id="img">
+                            <img src="https://images-na.ssl-images-amazon.com/images/W/MEDIAX_792452-T2/images/G/01/AMAZON_FASHION/2023/LuxuryStores/Spring-23/GW/Quad_Cards/Spring/LSS23_SPRING_DT_CAT_CARD_1_x2._SY232_CB595261253_.jpg">
+                            <p>
+                                Jackets
+                            </p>
+                        </div>
+                        <div id="img">
+                            <img src="https://images-na.ssl-images-amazon.com/images/W/MEDIAX_792452-T2/images/G/01/AMAZON_FASHION/2023/LuxuryStores/Spring-23/GW/Quad_Cards/Spring/LSS23_SPRING_DT_CAT_CARD_4_x2._SY232_CB595261253_.jpg">
+                            <p>
+                                Jewelry
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <a href="">See More</a>
+            </div>
+            <div id="block" class="type2">
+                <h1>
+                    Beauty deals under $25 
+                </h1>
+                <div id="block-img">
+                    <img src="https://images-na.ssl-images-amazon.com/images/W/MEDIAX_792452-T2/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_2x_v5._SY608_CB573698005_.jpg">
+                </div>
+                <a href="">Shop now</a>
+            </div>
+        </div>
+
+
+
+        <div id="linespace1"></div> 
+        <div id="grid4">
+            <div id="heading">
+                <h1>
+                    Most wished for in movie $ TV
+                </h1>
+                <!-- <a href="">Shop now</a> -->
+            </div>
+            <div id="scroll">
+                <div id="entity">
+                    <div id="img-sec">
+                        <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71e2wPp93EL._AC_SY400_.jpg">
+                    </div>
+                </div>
+                <div id="entity">
+                    <div id="img-sec">
+                        <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71EiFp3q84L._AC_SY400_.jpg">
+                    </div>
+                </div>
+                <div id="entity">
+                    <div id="img-sec">
+                        <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/81biiIq1mcL._AC_SY400_.jpg">
+                    </div>
+                </div>
+                <div id="entity">
+                    <div id="img-sec">
+                        <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/81-xkYB2izL._AC_SY400_.jpg">
+                    </div>
+                </div>
+                <div id="entity">
+                    <div id="img-sec">
+                        <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/81NAm5I66VL._AC_SY400_.jpg">
+                    </div>
+                </div>
+                <div id="entity">
+                    <div id="img-sec">
+                        <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/717mzNpA9HL._AC_SY400_.jpg">
+                    </div>
+                </div>
+                <div id="entity">
+                    <div id="img-sec">
+                        <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/81rjuxLh2TL._AC_SY400_.jpg">
+                    </div>
+                </div>
+                <div id="entity">
+                    <div id="img-sec">
+                        <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/81-rwxlW2rL._AC_SY200_.jpg">
+                    </div>
+                </div>
+                <div id="entity">
+                    <div id="img-sec">
+                        <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/81v9kAgiOaL._AC_SY400_.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div id="linespace1"></div> 
+
+        
+        <div id="grid2">
+            <div id="heading">
+                <h1>
+                    Exciting deals
+                </h1>
+                <a href="">Shop all deals</a>
+            </div>
+            <div id="scroll">
+                <div id="entity">
+                    <div id="img-sec">
+                        <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/51w3b1xFUJL._AC_SY400_.jpg">
+                    </div>
+                    <h6><span>44%off </span> Deal</h6>
+                    <h4>$168.53  <span>List Price : $302.99</span></h4>
+                    <p>
+                        Trimax TWL100 Ultra-Max Adjustable....
+                    </p>
+                </div>
+                <div id="entity">
+                    <div id="img-sec">
+                        <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/41r2g8J5v3L._AC_SY400_.jpg">
+                    </div>
+                    <h6><span>25%off </span> Deal</h6>
+                    <h4>$18.05  <span>List Price : $23.99</span></h4>
+                    <p>
+                        Melissa & Doug Design-Your-Own Jew...
+                    </p>
+                </div>
+                <div id="entity">
+                    <div id="img-sec">
+                        <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/41YgATcJVmL._AC_SY400_.jpg">
+                    </div>
+                    <h6><span>15%off </span> Deal</h6>
+                    <h4>$42.40  <span>List Price : $50.09</span></h4>
+                    <p>
+                        Magic The Gatherig The brothers War...
+                    </p>
+                    
+                </div>
+                <div id="entity">
+                    <div id="img-sec">
+                        <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/41+p2P6TKVL._AC_SY400_.jpg">
+                    </div>
+                    <h6><span>52%off </span> Deal</h6>
+                    <h4>$98.04  <span>List Price : $205.99</span></h4>
+                    <p>
+                        Little Tikas Backyard car wash...
+                    </p>
+                </div>
+                <div id="entity">
+                    <div id="img-sec">
+                        <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/31fsnCamPLL._AC_SY400_.jpg">
+                    </div>
+                    <h6><span>28%off </span> Deal</h6>
+                    <h4>$72.33  <span>List Price : $99.99</span></h4>
+                    <p>
+                        Great Northern Popcorn Big Bar..
+                    </p>
+                </div>
+                <div id="entity">
+                    <div id="img-sec">
+                        <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/41X9SwLymYL._AC_SY400_.jpg">
+                    </div>
+                    <h6><span>44%off </span> Deal</h6>
+                    <h4>$168.53  <span>List Price : $302.99</span></h4>
+                    <p>
+                        Trimax TWL100 Ultra-Max Adjustable....
+                    </p>
+                </div>
+                <div id="entity">
+                    <div id="img-sec">
+                        <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/51ak7tBjGtL._AC_SY400_.jpg">
+                    </div>
+                    <h6><span>44%off </span> Deal</h6>
+                    <h4>$168.53  <span>List Price : $302.99</span></h4>
+                    <p>
+                        Trimax TWL100 Ultra-Max Adjustable....
+                    </p>
+                </div>
+                <div id="entity">
+                    <div id="img-sec">
+                        <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/51Du8I+Z2fS._AC_SY400_.jpg">
+                    </div>
+                    <h6><span>44%off </span> Deal</h6>
+                    <h4>$168.53  <span>List Price : $302.99</span></h4>
+                    <p>
+                        Trimax TWL100 Ultra-Max Adjustable....
+                    </p>
+                </div>
+                <div id="entity">
+                    <div id="img-sec">
+                        <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/418CFYbALAL._AC_SY400_.jpg">
+                    </div>
+                    <h6><span>44%off </span> Deal</h6>
+                    <h4>$168.53  <span>List Price : $302.99</span></h4>
+                    <p>
+                        Trimax TWL100 Ultra-Max Adjustable....
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+
+
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
